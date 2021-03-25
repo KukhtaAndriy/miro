@@ -12,10 +12,9 @@
                         onClick: () => {
 
 
-                            let imageCustom = (miro.board.widgets.create({
-                                "type": "image",
-                                "url": "https://uploads-us-west-2.insided.com/miro-us/icon/200x200/b40ddf1f-971d-4fa6-9407-7f85d8572e55.png"
-                            }))[0];
+                            await miro.board.widgets.create({type: 'sticker', text: 'Hello'})
+                            let allStickers = await miro.board.widgets.get({type: 'sticker'})
+                            console.log(allStickers)
 
 
                         }
