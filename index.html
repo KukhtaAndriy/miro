@@ -10,11 +10,13 @@
                         title: 'Some title',
                         svgIcon: '<circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2"/>',
                         onClick: () => {
-                            let imageCustom = (await miro.board.widgets.create({
-                                "type": "image",
-                                "url": "https://uploads-us-west-2.insided.com/miro-us/icon/200x200/b40ddf1f-971d-4fa6-9407-7f85d8572e55.png"
-                            }))[0]; await miro.board.viewport.zoomToObject(imageCustom); await miro.board.widgets.update({id: imageCustom.id, url: 'https://uploads-us-west-2.insided.com/miro-us/icon/200x200/9f0cb885-c512-4b32-a6ef-f514bc2ff98d.png'})
-                        }
+                            alert('TEST');
+                        //     let imageCustom = (await miro.board.widgets.create({
+                        //         "type": "image",
+                        //         "url": "https://uploads-us-west-2.insided.com/miro-us/icon/200x200/b40ddf1f-971d-4fa6-9407-7f85d8572e55.png"
+                        //     }))[0]; await miro.board.viewport.zoomToObject(imageCustom); await miro.board.widgets.update({id: imageCustom.id, url: 'https://uploads-us-west-2.insided.com/miro-us/icon/200x200/9f0cb885-c512-4b32-a6ef-f514bc2ff98d.png'})
+                        // }
+                        //
                     }
                 }
             })
