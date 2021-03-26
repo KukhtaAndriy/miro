@@ -10,12 +10,8 @@
                         title: 'Some title',
                         svgIcon: '<circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2"/>',
                         onClick: () => {
-
-                            const viewport =  miro.board.viewport.get()
-                            const centeredX = viewport.x + viewport.width / 2
-                            const centeredY = viewport.y + viewport.height / 2
-                            miro.board.widgets.create({type:'sticker', x:centeredX, y:centeredY})
-
+                            const hotspots = getHotspots();
+                            hideHotspots(hotspots);
                         }
                     }
                 }
