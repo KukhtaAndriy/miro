@@ -6,17 +6,6 @@
         miro.onReady(() => {
             miro.initialize({
                 extensionPoints: {
-                    bottomBar: {
-                        title: 'Create image',
-                        svgIcon: '<circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2"/>',
-                        onClick: () => {
-                            miro.board.widgets.create({
-                                "type": "image",
-                                "url": "http://188.166.65.83/wp-content/themes/miro/assets/img/1MYeZHg9_400x400.png"
-                            })
-                            //miro.board.ui.__hideButtonsPanels(['top', 'bottomBar', 'map']);
-                        }
-                    },
                     toolBar: {
                         title: 'Hide UI',
                         librarySvgIcon:
