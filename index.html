@@ -4,7 +4,6 @@
     <script src="https://miro.com/app/static/sdk.1.1.js"></script>
     <script>
         miro.onReady(() => {
-            miro.board.ui.__hideButtonsPanels(['top', 'bottomBar', 'map']);
             miro.initialize({
                 extensionPoints: {
                     bottomBar: {
@@ -15,7 +14,7 @@
                             //     "type": "image",
                             //     "url": "http://188.166.65.83/wp-content/themes/miro/assets/img/1MYeZHg9_400x400.png"
                             // })
-                            miro.board.ui.__hideButtonsPanels(['top', 'bottomBar', 'map']);
+                            miro.board.ui.__hideButtonsPanels(['top', 'map']);
                         }
                     }
                 }
